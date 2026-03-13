@@ -1,4 +1,5 @@
 plugins {
+    'java'
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.jaredsburrows.license")
