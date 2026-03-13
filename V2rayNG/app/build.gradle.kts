@@ -27,8 +27,6 @@ android {
                     include(
                         "arm64-v8a",
                         "armeabi-v7a",
-                        "x86_64",
-                        "x86"
                     )
                 }
                 isUniversalApk = abiFilterList.isNullOrEmpty()
@@ -54,10 +52,6 @@ android {
             dimension = "distribution"
             applicationIdSuffix = ".fdroid"
             buildConfigField("String", "DISTRIBUTION", "\"F-Droid\"")
-        }
-        create("playstore") {
-            dimension = "distribution"
-            buildConfigField("String", "DISTRIBUTION", "\"Play Store\"")
         }
     }
 
