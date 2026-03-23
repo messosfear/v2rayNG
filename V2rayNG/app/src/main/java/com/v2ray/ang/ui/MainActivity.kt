@@ -104,10 +104,7 @@ class MainActivity : HelperBaseActivity(), NavigationView.OnNavigationItemSelect
         }
         
         // mod8
-        startActivity(
-                Intent()
-                    .setClass(this, SActivity::class.java)
-            )
+        
     }
 
     private fun setupViewModel() {
